@@ -1,0 +1,283 @@
+body{
+    font-family: 'Tajawal', sans-serif;
+}
+.social{
+    margin-left: 30px;
+    z-index: 150;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+.social p span i{
+    color: #fff;
+    background-color: rgb(181, 29, 28);
+    padding: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+nav{
+    background-color: rgb(0 19 31) !important;
+    font-weight: 800;
+    z-index: 100;
+}
+.navbar-brand img{
+    height: 80px;
+}
+nav .active{
+    color: rgb(181, 29, 28) !important;
+}
+
+header .head {
+    height: 100vh;
+    background-image: url('../images/elavator.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+header .head h2{
+    transform: translate(-50% , -10%);
+    -webkit-transform: translate(-50% , -10%);
+    -moz-transform: translate(-50% , -10%);
+    -ms-transform: translate(-50% , -10%);
+    -o-transform: translate(-50% , -10%);
+    background-color: #00131fb8;
+    padding: 25px 40px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: #fff 0px 0px 10px;
+}
+/* ********* media query ************* */
+@media screen and (max-width:767px){
+    .head{
+        height: 50vh !important;
+    }
+    .head h2{
+        top: 50% !important;
+    }
+}
+
+
+/* ********************** about section *********************** */
+#about{
+    padding: 40px 0px;
+}
+#about img{
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+@media screen and (max-width:767px){
+    #about{
+        padding: 30px 0px;
+    }
+}
+
+/* ********************************* ************************************************** */
+#services{
+    padding: 40px 0px;
+    background: linear-gradient(to left , #65283E , #21325B);
+}
+.title h4::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: rgb(181, 29, 28);
+    position: absolute;
+    top: 35px;
+    right: 25%;
+}
+.title h4::before{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: rgb(181, 29, 28);
+    position: absolute;
+    top: 35px;
+    left: 25%;
+}
+#services img{
+    border-radius: 25px 25px 0px 0px;
+    -webkit-border-radius: 25px 25px 0px 0px;
+    -moz-border-radius: 25px 25px 0px 0px;
+    -ms-border-radius: 25px 25px 0px 0px;
+    -o-border-radius: 25px 25px 0px 0px;
+}
+.service{
+    background-color: #fff;
+    border-radius: 0px 0px 25px 25px;
+    -webkit-border-radius: 0px 0px 25px 25px;
+    -moz-border-radius: 0px 0px 25px 25px;
+    -ms-border-radius: 0px 0px 25px 25px;
+    -o-border-radius: 0px 0px 25px 25px;
+}
+
+@media screen and (max-width:767px){
+    .title h4::after{
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: rgb(181, 29, 28);
+        position: absolute;
+        top: 20px;
+        right: 0%;
+    }
+    .title h4::before{
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: rgb(181, 29, 28);
+        position: absolute;
+        top: 20px;
+        left: 0%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .title h4::after{
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: rgb(181, 29, 28);
+        position: absolute;
+        top: 30px;
+        right: 13%;
+    }
+    .title h4::before{
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: rgb(181, 29, 28);
+        position: absolute;
+        top: 30px;
+        left: 13%;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1399px){
+    .title h4::after{
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: rgb(181, 29, 28);
+        position: absolute;
+        top: 30px;
+        right: 22%;
+    }
+    .title h4::before{
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: rgb(181, 29, 28);
+        position: absolute;
+        top: 30px;
+        left: 22%;
+    }
+}
+
+/* ****************************** start gallery ************************** */
+#gallery{
+    padding: 40px 0px;
+}
+#gallery .layer{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0px;
+}
+#gallery .layer:hover{
+    opacity: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#gallery .layer i{
+    color: #fff;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35%;
+}
+
+/* *************************** start connect ***************************** */
+.connect{
+    box-shadow: #ccc 0px 0px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/* *************************** start location ***************************** */
+#location iframe{
+    width: 100%;
+}
+#location .mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+    width: 100%;
+}
+#location .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+    width: 100%;
+}
+/* *************************** start footer ***************************** */
+#footer{
+    background-color: rgb(0 19 31);
+}
+.icons .facebook i{
+    background-color: blue;
+    padding: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.icons .whats i{
+    background-color: green;
+    padding: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.icons .insta i{
+    background-color: rgb(181, 29, 28);
+    padding: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+#footer .links p a:hover {
+    color: rgb(181, 29, 28) !important;
+    border-bottom: rgb(181, 29, 28) 1px solid;
+}
+
+.copyright{
+    background-color: rgb(44 58 67);
+    color: #fff;
+}
